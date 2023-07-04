@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/f943bccfc3.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/f943bccfc3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>A Tech Enthusiast</p>
+                <h1>Hi, I'm <span>Priyanshu Kumar</span>...</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- ABOUT-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Priyanshu Kumar.
+                    I am a final year engineering student pursuing B.Tech from 
+                    National Institute of Technology</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>C/C++, HTML CSS Javascript, SQL</li>
+                            <li><span>Web Development</span><br>Frontend Development</li>
+                            <li><span>Problem Solving</span><br>Data Structures and Algortihm</li>
+                            <li><span>CS Fundamentals</span><br>DSA, DBMS, Operating System, OOP</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Secondary School (Class 10th)</span><br>Jawahar Navodaya Vidyalaya, Rohtas, Bihar</li>
+                            <li><span>Senior Secondary School (Class 12th)</span><br>Vivekanand Mission School, Daudnagar, Bihar</li>
+                            <li><span>College / University</span><br>National Institute Of Technology, Jalandhar, Punjab</li>
+
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios Apps</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------SERVICES---------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                    <h2>Weather App</h2>
+                    <p>A simple and attractive web app which tells you about the weather of a specific location 
+                        along with date and time.You can search any location of your choice in the search box.
+                        It fetches data with the help of a weather API.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <h2>Sorting Visualizer</h2>
+                    <p>A Visual representation of various sorting algortihms which are used in Data Structure
+                        and algorithm such as merge sort, bubble sort, quick sort, selection sort, heap sort, etc.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hourglass-end"></i>
+                    <h2>Birthday Timer</h2>
+                    <p>A very basic Web page which tells you about remaining time in your 
+                        upcoming friend's Birthday, so that you can't miss the opurtunity of giving him/her a
+                        surprise party or gifts. It involves some basic concepts of html, css and it tests the 
+                        ability of logic building in Javascript.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------PRTFOLIO----------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Interests</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/coding.jpg">
+                    <div class="layer">
+                        <h3>Programming</h3>
+                        <p>I like programming and I kind of feel a satsifaction during coding.
+                        I love the idea of optimization of a problem for a better solution and runtime.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img style="object-fit: fill;" src="images/photograph.jpeg">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                        <p>So, I like Art and I love to click photos of my surroundings. I always focus on 
+                            capturing some minimal moments so that a beautiful story can be conveyed.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/travelling.jpg">
+                    <div class="layer">
+                        <h3>Travelling</h3>
+                        <p>I'm always fascinated by natural places like waterfalls, mountains, rivers, since childhood.
+                            So, I love to travel at these places very much.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>priyanshukr.jnvr451@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+91 6203145195</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100085286640515"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/priyanshuunexplainedfile/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/unexplainedfile?t=vxl9UoKxInehoODiF6VFLA&s=09"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/priyanshu-kumar-9608b2213/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input  type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©unexplainedfile, 2023</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
